@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: SF PRO DISPLAY;
+}
+
+body,
+html {
+  height: 100vh;
+  width: 100%;
+}
+
+#main {
+  position: relative;
+  overflow: hidden;
+}
+
+#page {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+#nav-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:15vh;
+  width: 100vw;
+  /*background-color: #e76f6f;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+#nav-1{
+height:50%;
+width:80%;
+display: flex;
+justify-content: flex-start;
+gap: 3.3vw;
+align-items: center;
+background-color: black;
+
+}
+#nav-1>i{
+  color:#e4d3d3 ;
+}
+#nav-1>h3{
+  font-size: 1vw;
+  font-weight: 250;
+  color: #b4a2a2;
+}
+#nav-1>h3:hover{
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+#nav-2{
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: white;
+height:50%;
+width:80%;
+background-color: black;
+}
+
+#apple:hover{
+  cursor: pointer;
+}
+#nav-2-right{
+  display: flex;
+  gap: 1.5vw;
+  font-weight: 500;
+}
+#nav-2-right>#h3-1{
+  font-size: 1.2vw;
+  
+  font-weight: 500;
+  color: #707070;
+} 
+#nav-2-right>#h3-1:hover{
+cursor: default; 
+}
+#nav-2-right>#h3-2{
+  font-size: 1.2vw;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+#nav-2-right>#h3-2:hover{
+  cursor: pointer;
+  color: #0787e9;
+}
+#nav-2-right>#h3-3{
+  font-size: 1.2vw;
+  font-weight: 500;
+} 
+#nav-2-right>#h3-3:hover{
+  cursor: pointer;
+  color: #0787e9;
+}
+#nav-2-right>#button1 {
+  padding: 2px 15px;
+  border-radius: 50px;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+}
+#nav-2-right>#button1:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+#nav-2-right>#button2 {
+  padding: 2px 15px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: blue;
+}
+#nav-2-right>#button2:hover{
+  cursor: pointer;
+}
+#page>video {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#page>nav>h3 {
+  font-weight: 500;
+}
+
+#page-bottom {
+  height: 20%;
+  width: 40%;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50%);
+  /*background-color: green;*/
+}
+
+#page-bottom>img {
+  padding: 0px 3px;
+  width: 80%;
+  height: 70%;
+}
+
+#page-bottom>h3 {
+  color: #f55600;
+  font-weight: 600;
+  margin-top: 1vw;
+  font-size: 1.9vw;
+}
+
+#page1 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+
+#page1>video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page1>h1 {
+  position: absolute;
+  color: white;
+  font-size: 3.5vw;
+  font-weight: 700;
+  font-family: SF PRO DISPLAY;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+#page2 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+#page2>video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page2>h1 {
+  position: absolute;
+  color: white;
+  font-size: 3.5vw;
+  font-weight: 720;
+  font-family: SF PRO DISPLAY;
+  bottom: 20%;
+  left: 40%;
+  transform: translateX(-40%);
+  text-align: center;
+}
+
+#page3 {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+
+}
+
+#page3>img {
+  width: 55%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#page3-upper {
+  width: 35%;
+  height: 25%;
+  top: 5%;
+  /* background-color: green;*/
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+#page3-upper>img {
+  width: 65%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#page3-upper-inner {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  /*background-color: blue;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 75px;
+  color: #ff6714;
+}
+
+#page3-upper-inner>h3 {
+  font-weight: 700;
+}
+
+#page3>button {
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border: 2px solid black;
+  font-weight: 400;
+  border-radius: 50px;
+  background-color: white;
+  font-size: 1.4vw;
+}
+
+#page4 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#page4>video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#center-page4 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateX(-50%, -50%);
+  text-align: center;
+  /*background-color: blue;*/
+  color: white;
+  font-size: 2vw;
+}
+
+#page5 {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+#left5 {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  /*background-color: blue;*/
+}
+
+#left5>h1 {
+  position: absolute;
+  font-size: 2.2vw;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+
+}
+
+#right5 {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  /* background-color: red;*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4vw;
+
+
+}
+
+#right5>h4 {
+  position: absolute;
+  top: 20%;
+  width: 80%;
+  font-size: 1.7vw;
+  font-weight: 570;
+  font-family:SF PRO DISPLAY ;
+  text-wrap: stable;
+  color: #616161;
+
+}
+#right5>button{
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  background-color: #ff5900;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.9vw;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+#page6{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  gap: 2vw;
+  background-color: #ebe5e5;
+}
+#page6>h3{
+ font-size: 2vw; 
+}
+#page6>h1{
+  font-size: 6vw;
+}
+#page6>p{
+  width: 50%;
+  text-wrap: stable;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.7vw;
+  font-weight: 600;
+  color: #5a5858;
+}
